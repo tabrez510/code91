@@ -1,0 +1,13 @@
+/* ID */
+#heading-1A {
+    font-size: 100px;
+    font-weight: 500;
+    color: blue;
+}
+
+/* Class */
+.heading-1B {
+    font-size: 50px;
+    font-weight: 200;
+    color: brown;
+}
