@@ -7,65 +7,204 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-    <p>Saif</p>
-    <h1>This is H1</h1>
-    <h2>This is H2</h2>
-    <h3>This is H3</h3>
-    <div>This is div</div>
-    </div>
 
-    <span>This is Span</span>
 
-    <h1>Code <span>91</span></h1>
 
-    <ol>
-        <li>Tabrez</li>
-        <li>Saif</li>
-        <li>Rahul</li>
-        <li>Rakesh</li>
-        <li>Shradhha</li>
-    </ol>
+    <script>
+        // let a = 1/"tabrez";
+        // console.log(a)
+        // console.log(typeof a)
 
-    <ul>
-        <li>Tabrez</li>
-        <li>Saif</li>
-        <li>Rahul</li>
-        <li>Rakesh</li>
-        <li>Shradhha</li>
-    </ul>
+        // if(a)
+        //     console.log('yes')
+        // else 
+        //     console.log('no')
 
-    <input type="text">
-    <input type="email">
-    <input type="tel">
-    <input type="password">
-    <input type="date">
-    <input type="checkbox">
-    <input type="radio">
-    <input type="range">
-    <input type="file">
-    <input type="submit">
-    <input type="reset">
 
-    <b>Bold</b>
-    <strong>Bold</strong>
-    <small>small</small>
-    <sub>Subscript</sub>
-    <sup>superscript</sup>
-    <del>Deleted</del>
+        // console.log('2' + 2) // will try to convert number into string
+        // console.log('a2b' + 5)
 
-    <p>My name is <b>Tabrez</b></p>
-    <h1>H<sub>2</sub>O</h1>
+        // console.log('6' - 4)
+        // console.log('bh2' - 5) // NaN
 
-    <a href="https://www.facebook.com/" target="_blank">facebook</a>
+        // console.log(5/'5') // op number
+        // console.log('5'/'6')
+        
+        // console.log('2' * 3)
 
-    <img src="https://c.ndtvi.com/2023-04/f5osoqio_srk_625x300_01_April_23.jpg" alt="Srk">
-    <video src=""></video>
-    <audio src=""></audio>
+        // Array : collection of elements having numbered index
+        // Object : collection of elements having key : value pair
 
-    <nav>Navbar</nav>
-    <header>Header</header>
-    <footer>Footer</footer>
-    <section></section>
+        // let arr = [88, 78, 56, 55]
+        // // access
+        // console.log(arr[2])
+
+        // // modify
+        // arr[2]=55
+        // console.log(arr, typeof arr)
+
+        // console.log(arr.length)
+        // arr[4] = 'rinku'
+        // console.log(arr)
+        // console.log(arr.length)
+
+        // console.log(typeof arr)
+        // console.log(Array.isArray(arr))
+
+        // push pop unshift shift
+        // let arr = [88, 78, 56, 55]
+        // arr.push(10)
+        // console.log(arr)
+        // console.log(arr.push(12))
+        
+        // // 88 78 56 55 10 12
+        // arr.pop()
+        // console.log(arr.pop())
+        
+        // 88 78 56 55
+        // unshift 
+
+        // let arr= [88, 78, 56, 55]
+        // arr.unshift(2)
+        // arr.unshift(5)
+        // console.log(arr)
+
+        // shift
+        // let arr= [88, 78, 56, 55] 
+        // arr.shift()
+        // console.log(arr)
+
+        // for loop in array
+        // let arr=['rinku', 'pandey', 'kavita']
+        // let newArr= [] 
+        // for(let i=0; i<arr.length; i++) {
+        //     newArr.push(arr[i].toUpperCase())
+        // }
+        // console.log(newArr)
+        
+        // let arr=['rinku', 'pandey', 'kavita']
+        // let newArr= [] 
+        
+        // let i=0;
+        // while(i<arr.length){
+        //     newArr.push(arr[i].toUpperCase())
+        //     i++;
+        // }
+        // console.log(newArr)
+
+
+        // for in //iterates on index
+        // let arr=['rinku', 'pandey', 'kavita']
+        // let newArr= [] 
+        // for(let i in arr) {
+        //     newArr.push(arr[i].toUpperCase())
+        // }
+        // console.log(newArr)
+
+        // for of : iterates on values
+
+        // let arr=['rinku', 'pandey', 'kavita']
+        // let newArr= [] 
+        // for(let value of arr) {
+        //     newArr.push(value.toUpperCase())
+        // }
+        // console.log(newArr)
+
+
+        // Oject
+        // let obj = {
+        //     'name' : 'rahul',
+        //     'age' : 22 ,
+        //     hobbies : ['reading', 'dancing', 'sports'] 
+        // }
+
+        // console.log(obj)
+
+        // //access
+        // console.log(obj.age)
+        // console.log(obj['name'])
+
+        // console.log(obj.hobbies[1])
+
+
+        // // modify 
+        // obj.age = 23;
+        // console.log(obj)
+
+
+        // dot vs bracket notation
+        // let key = 'email'
+        // let newObj= {
+        //     name : 'mayank' ,
+        //     'person age' : 60,
+        //     hobbies : ['reading', 'dancing']
+        // }
+        // console.log(newObj)
+        // console.log(newObj['person age'])
+
+        // // newObj.key = 'abc@gmail.com'
+        // // console.log(newObj)
+
+        // newObj[key] = 'abc@gmail.com'
+        // console.log(newObj)
+
+        // iteration in object
+        // let newObj= {
+        //     name : 'mayank' ,
+        //     'person age' : 60,
+        //     hobbies : ['reading', 'dancing']
+        // }
+        // for in
+        // for (let key in newObj){
+        //     console.log(`${key} : ${newObj[key]}`)
+        // }
+
+        // for of
+        // Object.keys(obj)
+
+        // console.log(Object.keys(newObj))
+
+        // for (value of Object.keys(newObj)) {
+        //     console.log(`${value} : ${newObj[value]}`)
+        // }
+
+        // computed property
+
+        // let key1='newKey1'
+        // let key2='newKey2'
+        // let value1='newValue1'
+        // let value2='newValue2'
+
+        // let obj= {
+        //     [key1] : value1 ,
+        //     [key2] : value2
+        // }
+        // console.log(obj)
+
+        // primitive vs reference
+
+        // let a= 5;
+        // let b=a;
+
+        // a=7;
+        // b will not change
+
+        // let arr1=[3, 7, 9]
+        // let arr2= arr1;
+
+        // arr1[1]=8
+        // console.log(arr2)
+
+        // let obj1 = {
+        //     key1 : "value1" ,
+        //     key2 : "value2"
+        // }
+
+        // let obj2= obj1;
+
+        // obj1.key1= "newValue1"
+        // console.log(obj2)
+
+    </script>
 </body>
 </html>
