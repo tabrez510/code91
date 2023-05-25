@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //find
+        // const arr = ['cat', 'dog', 'lion']
+        // console.log(arr.find((element) => element.length==3))
+
+        // every
+        // const arr = [2, 4, 6, 8]
+        // console.log(arr.every((element) => element %2==0))
+
+        //some 
+        // const arr = [2, 4, 6, 8, 9]
+        // console.log(arr.some((element) => element %2 !=0))
+
+        // fill
+        // const arr = new Array(10).fill(-1)
+        // const arr = [5,6,7,3,8,9]
+        // const newArr = arr.fill(0, 1, 5)
+        // console.log(newArr)
+        // console.log(arr)
+
+        // splice (start, delete, insert) 
+        // const arr = [2,3,4,8,0,5]
+        // arr.splice(1,2,'item1', 'item2')
+        // console.log(arr)
+
+        // slice
+        // const arr = [2,3,4,5,6,7]
+        // console.log(arr.slice(1,5))
+
+        // methods
+        // const obj = {
+        //     name : 'gaurav',
+        //     age : 22,
+        //     info : function () {
+        //         console.log(this)
+        //         return `name is ${this.name}, age is ${this.age}`
+        //     }
+        // }
+
+        // console.log(obj.info())
+
+        // function about () {
+        //     return `name is ${this.name}, age is ${this.age}`
+        // }
+        // const obj1 = {
+        //     name : 'gaurav',
+        //     age : 22,
+        //     info : about
+        // }
+        // const obj2 = {
+        //     name : 'rinku',
+        //     age : 21,
+        //     info : about
+        // }
+        // const obj3 = {
+        //     name : 'kavita',
+        //     age : 20,
+        //     info : about
+        // }
+
+        // console.log(obj1.info())
+        // console.log(obj2.info())
+        // console.log(obj3.info())
+
+        // console.log(this)
+
+
+        // const obj = {
+        //     a : 2,
+        //     b : 5,
+        //     c : {
+        //         a : 8,
+        //         d : 9,
+        //         f : function () {
+        //             return this.a
+        //         }
+        //     }
+        // }
+
+        // console.log(obj.c.f())
+
+
+        // call
+        // function hello () {
+        //     console.log("hello world")
+        // }
+
+        // hello.call()
+
+        // const obj = {
+        //     name : 'gaurav',
+        //     age : 22
+        // }
+
+        // function info (hobby, favFood){
+        //     console.log(`name is ${this.name}, age is ${this.age}, hobby is ${hobby}, fav food is ${favFood}`)
+        // }
+        // info.call(obj, 'singing', 'litti chokha')
+        // info.apply(obj, ['singing', 'litti chokha'])
+        // const func = info.bind(obj, 'singing', 'litti chokha')
+        // console.log(func())
+
+
+        // short syntax
+        // const obj = {
+        //     name : 'gaurav',
+        //     age : 22,
+        //     info () {
+        //         console.log(this)
+        //         return `name is ${this.name}, age is ${this.age}`
+        //     }
+        // }
+        // console.log(obj.info())
+
+        // function 
+        // empty object
+        // key value pair
+        // return object
+
+        // function person (name, age, gender, email){
+        //     const user = {};
+        //     user.name = name;
+        //     user.age = age;
+        //     user.gender = gender;
+        //     user.email = email;
+
+        //     user.info = function (){
+        //         console.log(`name is ${this.name}, age is ${this.age}, gender is ${this.gender}, email is ${this.email}`)
+        //     }
+        //     user.is18 = function (){
+        //         return this.age >= 18;
+        //     }
+        //     return user;
+        // }
+
+        // const user1 = person('gaurav', 22, 'male', 'abc@gmail.com')
+        // console.log(user1)
+        // user1.info()
+        // console.log(user1.is18())
+
+        // const userMethods = {
+        //     info : function (){
+        //         console.log(`name is ${this.name}, age is ${this.age}, gender is ${this.gender}, email is ${this.email}`)
+        //     },
+        //     is18 : function (){
+        //         return this.age >= 18;
+        //     },
+        //     sing : function () {
+        //         return 'kahani suno'
+        //     }
+        // }
+
+
+        // function person (name, age, gender, email){
+        //     const user = {};
+        //     user.name = name;
+        //     user.age = age;
+        //     user.gender = gender;
+        //     user.email = email;
+
+        //     user.info = userMethods.info;
+        //     user.is18 = userMethods.is18;
+        //     user.sing = userMethods.sing;
+        //     return user;
+        // }
+
+        // const user1 = person('gaurav', 22, 'male', 'abc@gmail.com')
+        // console.log(user1)
+        // user1.info()
+        // console.log(user1.is18())
+
+        // __proto__ or [[prototype]]
+
+        // const obj1 = {
+        //     key1 : 'key1',
+        //     key2 : 'key2'
+        // }
+
+        // const obj2 = Object.create(obj1);
+        // console.log(obj2)
+        // obj2.key3= 'key3'
+        // obj2.key1 = 'newKey1'
+        // console.log(obj2)
+        // console.log(obj2.key1)
+
+
+
+        // const userMethods = {
+        //     info : function (){
+        //         console.log(`name is ${this.name}, age is ${this.age}, gender is ${this.gender}, email is ${this.email}`)
+        //     },
+        //     is18 : function (){
+        //         return this.age >= 18;
+        //     },
+        //     sing : function () {
+        //         return 'kahani suno'
+        //     }
+        // }
+
+
+        // function person (name, age, gender, email){
+        //     const user = Object.create(userMethods);
+        //     user.name = name;
+        //     user.age = age;
+        //     user.gender = gender;
+        //     user.email = email;
+
+        //     return user;
+        // }
+
+        // const user1 = person('gaurav', 22, 'male', 'abc@gmail.com')
+        // console.log(user1)
+        // user1.info()
+        // console.log(user1.is18())
+
+
+        // function prototype
+        // function hello () {
+        //     console.log('hello world')
+        // }
+        // hello();
+
+        // hello.prototype.key1 ='key1';
+        // hello.prototype.key2 ='key2';
+        // hello.prototype.key3 ='key3';
+
+
+        // function person (name, age, gender, email){
+        //     const user = Object.create(person.prototype);
+        //     user.name = name;
+        //     user.age = age;
+        //     user.gender = gender;
+        //     user.email = email;
+
+        //     return user;
+        // }
+
+        // person.prototype.info = function (){
+        //     console.log(`name is ${this.name}, age is ${this.age}, gender is ${this.gender}, email is ${this.email}`)
+        // }
+
+        // person.prototype.is18 = function (){
+        //     return this.age >= 18;
+        // }
+
+        // person.prototype.sing = function () {
+        //     return 'kahani suno'
+        // }
+
+        // const user1 = person('gaurav', 22, 'male', 'abc@gmail.com')
+        // const user2 = person('runku', 20, 'male', 'def@gmail.com')
+        // console.log(user1)
+        // user1.info()
+        // console.log(user1.is18())
+        // console.log(user2)
+
+        // new keyword
+        // return emptyn this
+        // Object.create()
+        // constructor function
+        // function person (name, age, gender, email){
+        //     this.name = name;
+        //     this.age = age;
+        //     this.gender = gender;
+        //     this.email = email;
+        // }
+
+        // person.prototype.info = function (){
+        //     console.log(`name is ${this.name}, age is ${this.age}, gender is ${this.gender}, email is ${this.email}`)
+        // }
+
+        // person.prototype.is18 = function (){
+        //     return this.age >= 18;
+        // }
+
+        // person.prototype.sing = function () {
+        //     return 'kahani suno'
+        // }
+
+        // const user1 = new person('gaurav', 22, 'male', 'abc@gmail.com')
+        // const user2 = new person('runku', 20, 'male', 'def@gmail.com')
+        // console.log(user1)
+        // user1.info()
+        // console.log(user1.is18())
+        // console.log(user2)
+
+        // for (let key in user1){
+        //    if(user1.hasOwnProperty(key))
+        //    console.log(key)
+        // }
+        // console.log(Object.keys(user1))
+
+        // classes and objects
+
+        class Person {
+            constructor (name, age, gender, email) {
+                console.log("constructor is called")
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.email = email;
+            }
+
+            info (){
+                console.log(`name is ${this.name}, age is ${this.age}, gender is ${this.gender}, email is ${this.email}`)
+            }
+
+            is18 (){
+                return this.age >= 18;
+            }
+
+            sing () {
+                return 'kahani suno'
+            }
+        }
+
+        const person1 = new Person('gaurav', 22, 'male', 'abc@gmail.com')
+
+        // inheritance 
+        class Student extends Person {
+            constructor (name, age, gender, email, id, batchNo){
+                super(name, age, gender, email)
+                this.id = id
+                this.batchNo = batchNo
+            }
+
+            // method overrinding
+            sing () {
+                return 'abcdefgh'
+            }
+        }
+
+        const student1 = new Student('gaurav', 22, 'male', 'abc@gmail.com','183765', 'batch 1')
+        console.log(student1.sing())
+
+    </script>
+</body>
+</html>
